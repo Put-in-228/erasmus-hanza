@@ -65,19 +65,13 @@ export default {
 
 <style>
 .v-navigation-drawer .v-list-subheader__text {
-    font-size: medium !important;
-    font-weight: bold !important;
+    font-size: medium;
+    font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.v-list-item-title {
-    font-size: small !important;
-}
-
-.routerLink {
-    text-decoration: none;
-    color: inherit;
-    font-size: small
+.v-navigation-drawer .v-list-item__content {
+    font-size: small;
 }
 </style>
