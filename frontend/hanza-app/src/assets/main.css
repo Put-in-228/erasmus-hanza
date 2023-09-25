@@ -1,4 +1,5 @@
 @import './base.css';
+@import '~vuetify/src/stylus/main';
 
 #app {
   max-width: 1280px;
