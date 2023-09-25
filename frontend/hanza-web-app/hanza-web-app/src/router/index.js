@@ -1,22 +1,29 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+import Dashboard from "../views/Dashboard.vue"
 
 const routes = [
   {
-    path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
-    children: [
-      {
-        path: '',
-        name: 'Home',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
-      },
-    ],
-  },
+    path: "/dashboard/:dashboardId",
+    name: "Dashboard",
+    component: Dashboard,
+    props: true
+  }
 ]
+
+// const routes = [
+//   {
+//     path: '/',
+//     component: () => import('@/layouts/default/Default.vue'),
+//     children: [
+//       {
+//         path: '',
+//         name: 'Home',
+//         component: () => import('@/views/Home.vue'),
+//       },
+//     ],
+//   },
+// ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
