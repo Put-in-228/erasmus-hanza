@@ -36,12 +36,12 @@
 
 <script>
     // import { PowerBIEmbedModule } from 'powerbi-client-vue-js';
-
     // export default {
     //     components: {
     //         PowerBIEmbedModule
     //     }
-
-
+    // 
+    //
     // }
 </script>
+
