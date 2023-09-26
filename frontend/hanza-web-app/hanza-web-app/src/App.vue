@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import SideBar from './components/SideBar.vue';
+import ReportDashboard from './components/ReportDashboard.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import SideBar from './components/SideBar.vue';
     <SideBar />
     <v-main>
       <RouterView />
+      <ReportDashboard />
     </v-main>
   </v-app>
 </template>
