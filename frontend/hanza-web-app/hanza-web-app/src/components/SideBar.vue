@@ -34,6 +34,11 @@
             </v-list>
         </v-card>
     </v-navigation-drawer>
+
+    <v-app-bar theme="dark" density="compact" image="@/assets/headline.png">
+        <v-spacer></v-spacer>
+        <v-img class="mx-6" src="@/assets/logo-full-negative.svg" max-height="40" max-width="100" contain></v-img>
+    </v-app-bar>
 </template>
 
 <script>
@@ -41,23 +46,23 @@ export default {
     data: () => ({
         items: [
             { type: 'subheader', title: 'Pre - welding' },
-            { title: 'Plasma 5110', value: 1 },
-            { title: 'Laser 5210', value: 2 },
-            { title: 'Bending 5250', value: 3 },
-            { title: 'Machining 5300', value: 4 },
+            { title: 'Plasma 5110', value: 0 },
+            { title: 'Laser 5210', value: 1 },
+            { title: 'Bending 5250', value: 2 },
+            { title: 'Machining 5300', value: 3 },
 
             { type: 'divider' },
             { type: 'subheader', title: 'Welding' },
-            { title: 'Welding 5150', value: 5 },
+            { title: 'Welding 5150', value: 4 },
 
             { type: 'divider' },
             { type: 'subheader', title: 'After-welding' },
-            { title: 'WET Paint 5410', value: 6 },
-            { title: 'Powder Paint 5431', value: 7 },
-            { title: 'Assembly 5500', value: 8, },
-            { title: 'New Blast 5415', value: 9 },
-            { title: 'Old Blast 5413', value: 10 },
-            { title: 'Tank Wash 5417', value: 11 },
+            { title: 'WET Paint 5410', value: 5 },
+            { title: 'Powder Paint 5431', value: 6 },
+            { title: 'Assembly 5500', value: 7, },
+            { title: 'New Blast 5415', value: 8 },
+            { title: 'Old Blast 5413', value: 9 },
+            { title: 'Tank Wash 5417', value: 10 },
         ],
     }),
 }

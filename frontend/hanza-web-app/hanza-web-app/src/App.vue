@@ -14,8 +14,15 @@ import SideBar from './components/SideBar.vue';
 
 <style>
 
+html::-webkit-scrollbar {
+  display: none;
+}
 html, body{
   overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  height: 100vh;
 }
 
 .v-main {
