@@ -1,5 +1,5 @@
 # ERASMUS HANZA PROJECT
-This repo was made by <ins>Jevgenij Čiursin<sup>LT</sup></ins>, <ins>Lukas Titlius<sup>LT</sup></ins>, <ins>Shah Eiman Amzar Bin Shah Apandi<sup>DE</sup></ins>, <ins>Aleksandrs Veļikanovs<sup>LV</sup></ins>, <ins>Aleksandr Afanassjev<sup>EE</sup></ins>.
+This repo was made by <ins>Jevgenij Čiursin</ins><sup>_LT_</sup>, <ins>Lukas Titlius</ins><sup>_LT_</sup>, <ins>Shah Eiman Amzar Bin Shah Apandi</ins><sup>_DE_</sup>, <ins>Aleksandrs Veļikanovs</ins><sup>_LV_</sup>, <ins>Aleksandr Afanassjev</ins><sup>_EE_</sup>.
 
 During **ERASMUS+ BIP** project our task was to create Power BI report templates to show _Hanza_ company's data on TV screens <sup>(Power BI report files can be found in `Power BI reports` folder)</sup>. 
 Secondary objective was to create a web application which visualizes the data as well as has Graphical User Interface elements to navigate through different reports <sup>(web application can be found in `hanza-web-app` folder)</sup>.
