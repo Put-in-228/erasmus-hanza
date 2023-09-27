@@ -49,6 +49,11 @@ export default {
           embedUrl:
             'https://app.powerbi.com/reportEmbed?reportId=6b9d077e-0ac7-481c-99f6-6cd30e5f4a7e&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57',
         },
+        {
+          title: 'Welding 5150',
+          embedUrl:
+            'https://app.powerbi.com/reportEmbed?reportId=6607130e-52c0-403d-8cb7-b651bcd2a675&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57',
+        },
       ],
     };
   },
