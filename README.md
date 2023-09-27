@@ -34,4 +34,20 @@ Description of the image TBA
 Description of the image TBA
 
 ## Web application as data visualization solution
-To visualize data on TV screens we chose to create web application with embedded Power BI reports. Examples on how it looks like can be seen below.
+To visualize data on TV screens we chose to create _web application_ with embedded _Power BI reports_. Examples on how it looks like can be seen below.
+
+![img](/readme-images/web%20app%20example.jpg)
+
+In an image above you can see how our _web application_ looks like. 
+
+On the left of the screen we have navigational sidebar which lets us navigate through different kinds of departments and access the reports of that department accordingly.
+
+In the middle of the screen we have embedded _Power BI_ report which is interactable as you would use the _Power BI_ application.
+
+Additionally you can hide sidebar to increase the amount of space _Power BI_ embed uses on the screen:
+
+![img](/readme-images/web%20app%20no%20side%20example.jpg)
+
+### Technologies used for web application implementation
+
+It was decided to use ***Vue.js*** framework for _web application_ implementation. Additionally to implement appealing <ins>Graphical User Interface</ins><sup>later it's going to be called GUI</sup> design we used ***Vuetify*** library for additional _GUI_ components.
