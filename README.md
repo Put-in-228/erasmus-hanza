@@ -19,7 +19,19 @@ Power BI report templates were made using 8 main indicators:
 - ***Undefined interruptions***
 
 ### Report for OEE% and Productivity indicators example
-![test](/readme-images/late%20hours%20and%20hours.jpg)
+![img](/readme-images/OEE%20and%20Productivity.jpg)
+
+Description of the image TBA
+
+### Report for Late hours and Hours indicators example
+![img](/readme-images/late%20hours%20and%20hours.jpg)
+
+Description of the image TBA
+
+### Report for Rejection costs, Safety, Maintenence and undefined interruptions
+![img](/readme-images/rejection%20costs-safety-maintenence%20and%20undefined%20interruptions.jpg)
+
+Description of the image TBA
 
 ## Web application as data visualization solution
 To visualize data on TV screens we chose to create web application with embedded Power BI reports. Examples on how it looks like can be seen below.
