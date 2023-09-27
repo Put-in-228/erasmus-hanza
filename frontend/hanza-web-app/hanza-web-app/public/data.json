@@ -1,0 +1,109 @@
+[
+    {
+      "type": "subheader",
+      "title": "Pre - welding"
+    },
+    {
+      "title": "Plasma 5110",
+      "value": 0,
+      "report": {
+        "title": "Plasma 5110",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=85dae09c-efce-41e2-923c-288c79a81416&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+      }
+    },
+    {
+      "title": "Laser 5210",
+      "value": 1,
+      "report": {
+        "title": "Laser 5210",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=18f5fbba-cdfa-4b2c-8133-f95bd432deec&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+      }
+    },
+    {
+      "title": "Bending 5250",
+      "value": 2,
+      "report": {
+        "title": "Bending 5250",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=7b09dc23-52c3-44f7-9435-df65fd069c51&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+      }
+    },
+    {
+      "title": "Machining 5300",
+      "value": 3,
+      "report": {
+        "title": "Machining 5300",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=6b9d077e-0ac7-481c-99f6-6cd30e5f4a7e&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "subheader",
+      "title": "Welding"
+    },
+    {
+      "title": "Welding 5150",
+      "value": 4,
+      "report": {
+        "title": "Welding 5150",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=6607130e-52c0-403d-8cb7-b651bcd2a675&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+      }
+    },
+
+    { 
+      "type": "divider" 
+    },
+    { 
+      "type": "subheader", 
+      "title": "After-welding" 
+    },
+    { 
+      "title": "WET Paint 5410", 
+      "value": 5,
+      "report": {
+        "title": "WET Paint 5410",
+        "embedUrl": ""
+      } 
+    },
+    { 
+      "title": "Powder Paint 5431", 
+      "value": 6,
+      "report": {
+        "title": "WET Paint 5410",
+        "embedUrl": ""
+      } 
+    },
+    { 
+      "title": "Assembly 5500", 
+      "value": 7,
+      "report": {
+        "title": "Assembly 5500",
+        "embedUrl": ""
+      }  
+    },
+    { 
+      "title": "New Blast 5415", 
+      "value": 8,
+      "report": {
+        "title": "New Blast 5415",
+        "embedUrl": ""
+      }  
+    },
+    { 
+      "title": "Old Blast 5413", 
+      "value": 9,
+      "report": {
+        "title": "Old Blast 5413",
+        "embedUrl": ""
+      } 
+    },
+    { 
+      "title": "Tank Wash 5417", 
+      "value": 10,
+      "report": {
+        "title": "Tank Wash 5417",
+        "embedUrl": " "
+      }  
+    }
+  ]

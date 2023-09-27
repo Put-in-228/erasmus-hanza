@@ -5,12 +5,12 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-            <v-list-item prepend-icon="mdi-view-dashboard" value="dashboards"></v-list-item>
-            <v-list-item prepend-icon="mdi-cog-outline" value="messages"></v-list-item>
+            <v-list-item @click="toggleDrawer('dashboards')" prepend-icon="mdi-view-dashboard" value="dashboards"></v-list-item>
+            <v-list-item @click="toggleDrawer('settings')" prepend-icon="mdi-cog-outline" value="settings"></v-list-item>
         </v-list>
     </v-navigation-drawer>
 
-    <v-navigation-drawer theme="dark" permanent :width="180">
+    <v-navigation-drawer v-if="selectedNavItem === 'dashboards'" theme="dark" permanent :width="180">
         <v-card class="mx-auto" max-width="300">
             <v-list dense nav>
                 <template v-for="(item, index) in items" :key="index">
@@ -35,6 +35,13 @@
         </v-card>
     </v-navigation-drawer>
 
+    <v-navigation-drawer v-if="selectedNavItem === 'settings'" theme="dark" permanent :width="180">
+        <v-card class="mx-auto" max-width="300">
+            <v-list dense nav>
+            </v-list>
+        </v-card>
+    </v-navigation-drawer>
+
     <v-app-bar theme="dark" density="compact" image="@/assets/headline.png">
         <v-spacer></v-spacer>
         <v-img class="mx-6" src="@/assets/logo-full-negative.svg" max-height="40" max-width="100" contain></v-img>
@@ -42,29 +49,24 @@
 </template>
 
 <script>
+import jsonData from '/public/data.json';
+
 export default {
     data: () => ({
-        items: [
-            { type: 'subheader', title: 'Pre - welding' },
-            { title: 'Plasma 5110', value: 0 },
-            { title: 'Laser 5210', value: 1 },
-            { title: 'Bending 5250', value: 2 },
-            { title: 'Machining 5300', value: 3 },
-
-            { type: 'divider' },
-            { type: 'subheader', title: 'Welding' },
-            { title: 'Welding 5150', value: 4 },
-
-            { type: 'divider' },
-            { type: 'subheader', title: 'After-welding' },
-            { title: 'WET Paint 5410', value: 5 },
-            { title: 'Powder Paint 5431', value: 6 },
-            { title: 'Assembly 5500', value: 7, },
-            { title: 'New Blast 5415', value: 8 },
-            { title: 'Old Blast 5413', value: 9 },
-            { title: 'Tank Wash 5417', value: 10 },
-        ],
+        items: jsonData,
+        selectedNavItem: null,
     }),
+
+    methods: {
+        toggleDrawer(value) {
+            if (this.selectedNavItem === value) {
+                this.selectedNavItem = null;
+            } else {
+                // Toggle the second drawer based on the selected value
+                this.selectedNavItem = value;
+            }
+        },
+    },
 }
 </script>
 
