@@ -15,6 +15,12 @@ This repo was made by <ins>Jevgenij Čiursin</ins><sup>_LT_</sup>, <ins>Lukas Ti
         - **[Buttons under Headers/Categories setup](#buttons-under-headerscategories-setup)**
         - **[How to get embedUrl of _Power BI_ report for sidebar setup](#how-to-get-embedurl-of-power-bi-report-for-sidebar-setup)**
         - **[Sidebar setup examples with _data.json_ file and screenshots of the page](#sidebar-setup-examples-with-datajson-file-and-screenshots-of-the-page)**
+    - **[Guide on how to setup project for _production_](#guide-on-how-to-setup-project-for-production)**
+    - **[Guide on how to navigate through web application and use it](#guide-on-how-to-navigate-through-web-application-and-use-it)**
+        - **[Front page guide](#front-page-guide)**
+        - **[Slideshow mode guide](#slideshow-mode-guide)**
+        - **[Slideshow mode during runtime](#slideshow-mode-during-runtime)**
+        - **[Fullscreen mode guide](#fullscreen-mode-guide)**
 
 
 
@@ -327,4 +333,4 @@ In this section you will be guided on how to use _web application_ as end user. 
 
 ![img](https://placehold.co/15x15/red/red) - buttons to change the slides manually during slideshow mode `runtime`.<br>
 ![img](https://placehold.co/15x15/blue/blue) - button panel to switch to exact report slide from given order configuration manually.<br>
-![img](https://placehold.co/15x15/yellow) - button to exit fullscreen mode. The button shows up when the **cursor** is close to the top of the screen. Additionally you can exit fullscreen mode with **Esc** button on the keyboard.
+![img](https://placehold.co/15x15/yellow/yellow) - button to exit fullscreen mode. The button shows up when the **cursor** is close to the top of the screen. Additionally you can exit fullscreen mode with **Esc** button on the keyboard.
