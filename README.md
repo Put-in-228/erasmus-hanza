@@ -21,17 +21,19 @@ Power BI report templates were made using 8 main indicators:
 ### Report for OEE% and Productivity indicators example
 ![img](/readme-images/OEE%20and%20Productivity.jpg)
 
-Description of the image TBA
+This screenshot shows two indicators (OEE, Productivity), below each graph there is a KPI block that shows whether the goal has been achieved. Here is a Productivity graph at the top, on a day Productivity must be at least 80 percent, the KPI graph takes the average of the Productivity columns, filtered by month, and shows whether the values has been achieved for a certain month.
 
 ### Report for Late hours and Hours indicators example
 ![img](/readme-images/late%20hours%20and%20hours.jpg)
 
-Description of the image TBA
+Like in the previous screenshot, two indicators are selected (Late hours and Hours), which show the hours of lateness and the operating hours of the sensors.
 
 ### Report for Rejection costs, Safety, Maintenence and undefined interruptions
 ![img](/readme-images/rejection%20costs-safety-maintenence%20and%20undefined%20interruptions.jpg)
 
-Description of the image TBA
+In this table and graph, indicators such as Rejection costs, Safety/Quantity, Mainetance and Undefined interruption were selected. Also using the slicer, you can see how much expenses were by month and a KPI block was added to this char (goal = 100 per day).
+
+On the tables can also be filtered by month and see how many emergencies there were; if the value is greater than zero, then it lights up red or less than one, it turns green. In addition to the month you can see on what day it happened.
 
 ## Web application as data visualization solution
 To visualize data on TV screens we chose to create _web application_ with embedded _Power BI reports_. Examples on how it looks like can be seen below.
