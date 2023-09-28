@@ -3,7 +3,7 @@ This repo was made by <ins>Jevgenij Čiursin</ins><sup>_LT_</sup>, <ins>Lukas Ti
 
 ## Table of contents
 
-- **<ins>[Project task](#project-task)</ins>**
+- **[Project task](#project-task)**
 - **[Power BI reports](#power-bi-reports)**
     - **[Report for OEE% and Productivity indicators example](#report-for-oee-and-productivity-indicators-example)**
     - **[Report for Late hours and Hours indicators example](#report-for-late-hours-and-hours-indicators-example)**
@@ -103,7 +103,7 @@ Below you can see the sidebar implementation in _web application_ and instructio
 ]
 ```
 
-Description TBA
+To define a category of the buttons (e. g. **pre-weld** departments) you need to create an object which is of `subheader` type as shown above and give it a title of your choice. If your web application has multiple categories, then after the last button of your previous category you need to include an object of `divider` type and then include the `subheader` for new category buttons.
 
 #### Buttons under Headers/Categories setup
 
@@ -122,7 +122,7 @@ Description TBA
 },
 {
       "title": "1st subheader Button 2",
-      "value": 0,
+      "value": 1,
       "report": {
         "title": "Report title (any)",
         "embedUrl": "Refer to guide below on how to get embedUrl"
@@ -133,7 +133,7 @@ Description TBA
 ...
 {
       "title": "2nd subheader Button 1",
-      "value": 0,
+      "value": 2,
       "report": {
         "title": "Report title (any)",
         "embedUrl": "Refer to guide below on how to get embedUrl"
@@ -141,7 +141,7 @@ Description TBA
 },
 {
       "title": "2nd subheader Button 2",
-      "value": 0,
+      "value": 3,
       "report": {
         "title": "Report title (any)",
         "embedUrl": "Refer to guide below on how to get embedUrl"
@@ -149,7 +149,7 @@ Description TBA
 },
 {
       "title": "2nd subheader Button 3",
-      "value": 0,
+      "value": 4,
       "report": {
         "title": "Report title (any)",
         "embedUrl": "Refer to guide below on how to get embedUrl"
@@ -158,11 +158,11 @@ Description TBA
 ]
 ```
 
-Description TBA
+After defining `subheader` for the category you can include buttons which hold inside of them the name of the button - `title` and the `embedUrl` which visualizes the report that you _embed_ into application. `report` object holds `title` which doesn't show up on the screen but is visible in the background (or *source*), so the title for report can be the same as the button's name. It's **important** to note that each button going from <ins>top</ins> to <ins>bottom</ins> must have values starting from **0** and ending with a number that is the <ins>number of buttons - 1</ins>. For additional examples on how this sidebar setup works please refer to <ins>[this link](#sidebar-setup-examples-with-datajson-file-and-screenshots-of-the-page)</ins> and regarding `embedUrl` please refer to <ins>[this link](#how-to-get-embedurl-of-power-bi-report-for-sidebar-setup)</ins>.
 
 #### How to get embedUrl of _Power BI_ report for sidebar setup
 
-To get ***embedUrl*** of _Power BI_ report that you want to show in _web application_ refer to the image below:
+To get `embedUrl` of _Power BI_ report that you want to show in _web application_ refer to the image below:
 
 ![img](/readme-images/web%20app%20report%20add.jpg)
 
@@ -288,3 +288,10 @@ The ***embedUrl*** that you need to use in [sidebar setup](/hanza-web-app/public
 <ins>And how this looks like in app:</ins>
 
 ![img](/readme-images/web%20app%20sidebar%20example2.jpg)
+
+### Guide on how to setup project for _production_
+
+TBA
+
+### Guide on how to navigate through _web application_ and use it
+
