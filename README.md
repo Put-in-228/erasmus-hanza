@@ -9,6 +9,13 @@ This repo was made by <ins>Jevgenij Čiursin</ins><sup>_LT_</sup>, <ins>Lukas Ti
     - **[Report for Late hours and Hours indicators example](#report-for-late-hours-and-hours-indicators-example)**
     - **[Report for Rejection costs, Safety, Maintenence and undefined interruptions example](#report-for-rejection-costs-safety-maintenence-and-undefined-interruptions-example)**
 - **[Web application as data visualization solution](#web-application-as-data-visualization-solution)**
+    - **[Technologies used for web application implementation](#technologies-used-for-web-application-implementation)**
+    - **[How to setup sidebar for _web application_](#how-to-setup-sidebar-for-web-application)**
+        - **[Headers/Categories setup](#headerscategories-setup)**
+        - **[Buttons under Headers/Categories setup](#buttons-under-headerscategories-setup)**
+        - **[How to get embedUrl of _Power BI_ report for sidebar setup](#how-to-get-embedurl-of-power-bi-report-for-sidebar-setup)**
+        - **[Sidebar setup examples with _data.json_ file and screenshots of the page](#sidebar-setup-examples-with-datajson-file-and-screenshots-of-the-page)**
+
 
 
 ## Project task
