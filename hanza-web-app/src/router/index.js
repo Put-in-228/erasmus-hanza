@@ -1,6 +1,7 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from "../views/Dashboard.vue"
+import Slideshow from "../views/Slideshow.vue"
 
 const routes = [
   {
@@ -8,22 +9,14 @@ const routes = [
     name: "Dashboard",
     component: Dashboard,
     props: true
+  },
+  {
+    path: "/slideshow",
+    name: "Slideshow",
+    component: Slideshow,
+    props: true
   }
 ]
-
-// const routes = [
-//   {
-//     path: '/',
-//     component: () => import('@/layouts/default/Default.vue'),
-//     children: [
-//       {
-//         path: '',
-//         name: 'Home',
-//         component: () => import('@/views/Home.vue'),
-//       },
-//     ],
-//   },
-// ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

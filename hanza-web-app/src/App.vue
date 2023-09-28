@@ -5,15 +5,39 @@ import SideBar from './components/SideBar.vue';
 
 <template>
   <v-app>
-    <SideBar />
+    <SideBar @start-slideshow="handleSlideshow" @start-slideshow-fullscreen="handleSlideshowFullscreen"/>
     <v-main>
-      <RouterView />
+      <RouterView :selectedData="selectedData" :selectedTimeValue="selectedTimeValue" :isSlideshowFullscreen="isSlideshowFullscreen"/>
     </v-main>
   </v-app>
 </template>
 
-<style>
+<script>
+export default {
+  components: {
+    RouterView,
+    SideBar,
+  },
+  data() {
+    return {
+      selectedData: {},
+      selectedTimeValue: 0,
+      isSlideshowFullscreen: false,
+    };
+  },
+  methods: {
+    handleSlideshow(data) {
+      this.selectedData = [...data.selectedNavItems];
+      this.selectedTimeValue = data.sliderTimeValue;
+    },
+    handleSlideshowFullscreen(data) {
+      this.isSlideshowFullscreen = data.isSlideshowFullscreen;
+    },
+  },
+};
+</script>
 
+<style>
 html::-webkit-scrollbar {
   display: none;
 }
