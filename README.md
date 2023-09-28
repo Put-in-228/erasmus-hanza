@@ -295,3 +295,15 @@ TBA
 
 ### Guide on how to navigate through _web application_ and use it
 
+In this section you will be guided on how to use _web application_ as end user. All the interactable buttons and features are going to be explained below.
+
+#### Front page guide
+
+![img](/readme-images/hanza%20web%20app%20demo1.jpg)
+
+![img](https://placehold.co/15x15/red/red) - button to show main screen where you're able to freely choose which department's report to show on screen (no slideshow functionality)
+![img](https://placehold.co/15x15/blue/blue) - button to enter slideshow mode in _web application_, proceed to [Slideshow mode guide](#slideshow-mode-guide)
+![img](https://placehold.co/15x15/yellow/yellow) - buttons with tied report links that can be setup as shown in [button setup guide](#buttons-under-headerscategories-setup)
+
+#### Slideshow mode guide
+
