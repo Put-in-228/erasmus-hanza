@@ -53,3 +53,5 @@ Additionally you can hide sidebar to increase the amount of space _Power BI_ emb
 It was decided to use ***Vue.js*** framework for _web application_ implementation. Additionally to implement appealing <ins>Graphical User Interface</ins><sup>later it's going to be called GUI</sup> design we used ***Vuetify*** package for additional _GUI_ components.
 
 ### How to setup sidebar for _web application_
+
+To setup sidebar for _web application_ you need to edit `[sidebar config file](/hanza-web-app/public/data.json)`
