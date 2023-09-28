@@ -309,4 +309,22 @@ In this section you will be guided on how to use _web application_ as end user. 
 
 ![img](/readme-images/hanza%20web%20app%20demo2.jpg)
 
-- ![img]()
+![img](https://placehold.co/15x15/red/red) - buttons for departments, in _slideshow mode_ you click on them to choose the order in which they appear during slideshow `runtime`. At the bottom number shows how many departments are selected to be shown during slideshow `runtime`<br>
+![img](https://placehold.co/15x15/blue/blue) - _sliding bar_ is used to select how often does the slide change on the screen, possible values are `0-60` seconds. Above _sliding bar_ you can see the number of seconds that pass.<br>
+![img](https://placehold.co/15x15/green/green) - button to reset the ongoing slideshow `runtime`.<br>
+![img](https://placehold.co/15x15/yellow/yellow) - button to start slideshow `runtime` after configuration.<br>
+![img](https://placehold.co/15x15/cyan/cyan) - button to go fullscreen mode, refer to [fullscreen mode guide](#fullscreen-mode-guide).
+
+#### Slideshow mode during runtime
+
+![img](/readme-images/hanza%20web%20app%20demo3.jpg)
+
+![img](https://placehold.co/15x15/red/red) - buttons to change the slides manually during slideshow mode `runtime`.
+
+#### Fullscreen mode guide
+
+![img](/readme-images/hanza%20web%20app%20demo4.jpg)
+
+![img](https://placehold.co/15x15/red/red) - buttons to change the slides manually during slideshow mode `runtime`.<br>
+![img](https://placehold.co/15x15/blue/blue) - button panel to switch to exact report slide from given order configuration manually.<br>
+![img](https://placehold.co/15x15/yellow) - button to exit fullscreen mode. The button shows up when the **cursor** is close to the top of the screen. Additionally you can exit fullscreen mode with **Esc** button on the keyboard.
