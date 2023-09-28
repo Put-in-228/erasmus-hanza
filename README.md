@@ -3,7 +3,7 @@ This repo was made by <ins>Jevgenij Čiursin</ins><sup>_LT_</sup>, <ins>Lukas Ti
 
 ## Table of contents
 
-- **[Project task](#project-task)**
+- **<ins>[Project task](#project-task)</ins>**
 - **[Power BI reports](#power-bi-reports)**
     - **[Report for OEE% and Productivity indicators example](#report-for-oee-and-productivity-indicators-example)**
     - **[Report for Late hours and Hours indicators example](#report-for-late-hours-and-hours-indicators-example)**
