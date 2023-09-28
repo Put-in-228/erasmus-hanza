@@ -56,6 +56,32 @@ It was decided to use ***Vue.js*** framework for _web application_ implementatio
 
 To setup sidebar for _web application_ you need to edit [sidebar config file](/hanza-web-app/public/data.json).
 
+Below you can see the sidebar implementation in _web application_ and instructions on how to set it up using above mentioned file.
+
+![img](/readme-images/web%20app%20setup.jpg)
+
+#### Headers/Categories setup
+
+```
+[
+...
+{
+      "type": "subheader",
+      "title": "subheader - Example 1"
+},
+...
+//Here you input information regarding buttons that are affiliated with **subheader - Example 1**\\
+...
+{
+      "type": "subheader",
+      "title": "subheader - Example 2"
+},
+...
+//Here you input information regarding buttons that are affiliated with **subheader - Example 2**\\
+...
+]
+```
+
 ```
 [
     {
