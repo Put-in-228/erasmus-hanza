@@ -154,3 +154,118 @@ After clicking `Website or portal` button you should get pop-up window as shown 
 The ***embedUrl*** that you need to use in [sidebar setup](/hanza-web-app/public/data.json) file is highlighted with red color, all you need to do is copy it and paste it on appropriate button.
 
 #### Sidebar setup examples with _data.json_ file and screenshots of the page
+
+<ins>First example below:</ins>
+
+```
+[
+    {
+      "type": "subheader",
+      "title": "Subheader - Example 1"
+    },
+    {
+      "title": "Button 1",
+      "value": 0,
+      "report": {
+        "title": "Button 1",
+        "embedUrl": ""
+      }
+    },
+    {
+      "title": "Button 2",
+      "value": 1,
+      "report": {
+        "title": "Button 2",
+        "embedUrl": ""
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "subheader",
+      "title": "Subheader - Example 2"
+    },
+    {
+      "title": "Button 3",
+      "value": 2,
+      "report": {
+        "title": "Button 3",
+        "embedUrl": ""
+      }
+    }
+  ]
+```
+
+<ins>And how this looks like in app:</ins>
+
+![img](/readme-images/web%20app%20sidebar%20example1.jpg)
+
+<ins>Second example below:</ins>
+
+```
+[
+    {
+      "type": "subheader",
+      "title": "Subheader - Example 1"
+    },
+    {
+      "title": "Button 1",
+      "value": 0,
+      "report": {
+        "title": "Button 1",
+        "embedUrl": ""
+      }
+    },
+    {
+      "title": "Button 2",
+      "value": 1,
+      "report": {
+        "title": "Button 2",
+        "embedUrl": ""
+      }
+    },
+    {
+      "title":"Button 5",
+      "value":2,
+      "report": {
+        "title":"Button 5",
+        "embedUrl": ""
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "subheader",
+      "title": "Subheader - Example 2"
+    },
+    {
+      "title": "Button 3",
+      "value": 3,
+      "report": {
+        "title": "Button 3",
+        "embedUrl": ""
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type":"subheader",
+      "title": "Subheader - Example 3"
+    },
+    {
+      "title": "Button 4",
+      "value": 4,
+      "report": {
+        "title":"Button 4",
+        "embedUrl": ""
+      }
+    }
+  ]
+```
+
+<ins>And how this looks like in app:</ins>
+
+![img](/readme-images/web%20app%20sidebar%20example2.jpg)
