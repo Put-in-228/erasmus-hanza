@@ -79,7 +79,7 @@
             <v-divider></v-divider>
             <v-card>
 
-                <div class="d-flex pt-4s pl-5" style="gap: 5px;">
+                <div class="d-flex pl-5" style="gap: 5px;">
                     <span class="mdi mdi-clock-time-eight-outline"></span>
                     <div class="text-centers">{{ sliderTimeValue }}</div>
                     <span class="mdi mdi-view-dashboard"></span>
@@ -96,13 +96,14 @@
                         <v-btn size="small" variant="text" icon="mdi-plus" :color="color" @click="increment"></v-btn>
                     </template>
                 </v-slider>
-            </v-card>
 
-            <div class="slideshow-nav-buttons" style="gap: 5px;">
-                <v-btn icon="mdi mdi-fullscreen" @click="toggleSlideshowFullscreen"></v-btn>
-                <v-btn icon="mdi mdi-play-circle-outline" @click="startSlideshow" ></v-btn>
-                <v-btn icon="mdi mdi-reload" @click="resetSlideshow" ></v-btn>
-            </div>
+                <div class="slideshow-nav-buttons" style="gap: 5px;">
+                    <v-btn icon="mdi mdi-fullscreen" @click="toggleSlideshowFullscreen"></v-btn>
+                    <v-btn icon="mdi mdi-play-circle-outline" @click="startSlideshow"></v-btn>
+                    <v-btn icon="mdi mdi-reload" @click="resetSlideshow"></v-btn>
+                </div>
+
+            </v-card>
         </template>
 
     </v-navigation-drawer>
@@ -243,5 +244,4 @@ export default {
     padding-bottom: 15px;
     margin: 0px;
 }
-
 </style>
