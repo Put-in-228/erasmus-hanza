@@ -21,17 +21,19 @@ Power BI report templates were made using 8 main indicators:
 ### Report for OEE% and Productivity indicators example
 ![img](/readme-images/OEE%20and%20Productivity.jpg)
 
-Description of the image TBA
+This screenshot shows two indicators (OEE, Productivity), below each graph there is a KPI block that shows whether the goal has been achieved. Here is a Productivity graph at the top, on a day Productivity must be at least 80 percent, the KPI graph takes the average of the Productivity columns, filtered by month, and shows whether the values has been achieved for a certain month.
 
 ### Report for Late hours and Hours indicators example
 ![img](/readme-images/late%20hours%20and%20hours.jpg)
 
-Description of the image TBA
+Like in the previous screenshot, two indicators are selected (Late hours and Hours), which show the hours of lateness and the operating hours of the sensors.
 
 ### Report for Rejection costs, Safety, Maintenence and undefined interruptions
 ![img](/readme-images/rejection%20costs-safety-maintenence%20and%20undefined%20interruptions.jpg)
 
-Description of the image TBA
+In this table and graph, indicators such as Rejection costs, Safety/Quantity, Mainetance and Undefined interruption were selected. Also using the slicer, you can see how much expenses were by month and a KPI block was added to this char (goal = 100 per day).
+
+On the tables can also be filtered by month and see how many emergencies there were; if the value is greater than zero, then it lights up red or less than one, it turns green. In addition to the month you can see on what day it happened.
 
 ## Web application as data visualization solution
 To visualize data on TV screens we chose to create _web application_ with embedded _Power BI reports_. Examples on how it looks like can be seen below.
@@ -53,3 +55,219 @@ Additionally you can hide sidebar to increase the amount of space _Power BI_ emb
 It was decided to use ***Vue.js*** framework for _web application_ implementation. Additionally to implement appealing <ins>Graphical User Interface</ins><sup>later it's going to be called GUI</sup> design we used ***Vuetify*** package for additional _GUI_ components.
 
 ### How to setup sidebar for _web application_
+
+To setup sidebar for _web application_ you need to edit [sidebar config file](/hanza-web-app/public/data.json).
+
+Below you can see the sidebar implementation in _web application_ and instructions on how to set it up using above mentioned file.
+
+![img](/readme-images/web%20app%20setup.jpg)
+
+#### Headers/Categories setup
+
+```
+[
+{
+      "type": "subheader", <-- Important to keep it as subheader
+      "title": "subheader - Example 1" <-- The name of subheader to be shown (can be any)
+},
+...
+//Here you input information regarding buttons that are affiliated with subheader - Example 1\\
+...
+{
+      "type": "divider" <-- Important to keep it as divider //Place it in between the previous subheader buttons and new subheader\\
+},
+{
+      "type": "subheader", <-- Important to keep it as subheader
+      "title": "subheader - Example 2" <-- The name of subheader to be shown (can be any)
+},
+...
+//Here you input information regarding buttons that are affiliated with subheader - Example 2\\
+...
+]
+```
+
+Description TBA
+
+#### Buttons under Headers/Categories setup
+
+```
+[
+...
+//Here you input subheader as shown above\\ 1st subheader
+...
+{
+      "title": "1st subheader Button 1", <-- Name of the button shown on the screen (can be any)
+      "value": 0,
+      "report": {
+        "title": "Report title (any)",
+        "embedUrl": "Refer to guide below on how to get embedUrl"
+      }
+},
+{
+      "title": "1st subheader Button 2",
+      "value": 0,
+      "report": {
+        "title": "Report title (any)",
+        "embedUrl": "Refer to guide below on how to get embedUrl"
+      }
+},
+...
+//Here you input subheader and divider as shown above\\ 2nd subheader
+...
+{
+      "title": "2nd subheader Button 1",
+      "value": 0,
+      "report": {
+        "title": "Report title (any)",
+        "embedUrl": "Refer to guide below on how to get embedUrl"
+      }
+},
+{
+      "title": "2nd subheader Button 2",
+      "value": 0,
+      "report": {
+        "title": "Report title (any)",
+        "embedUrl": "Refer to guide below on how to get embedUrl"
+      }
+},
+{
+      "title": "2nd subheader Button 3",
+      "value": 0,
+      "report": {
+        "title": "Report title (any)",
+        "embedUrl": "Refer to guide below on how to get embedUrl"
+      }
+},
+]
+```
+
+Description TBA
+
+#### How to get embedUrl of _Power BI_ report for sidebar setup
+
+To get ***embedUrl*** of _Power BI_ report that you want to show in _web application_ refer to the image below:
+
+![img](/readme-images/web%20app%20report%20add.jpg)
+
+After clicking `Website or portal` button you should get pop-up window as shown below:
+
+![img](/readme-images/web%20app%20report%20add2.jpg)
+
+The ***embedUrl*** that you need to use in [sidebar setup](/hanza-web-app/public/data.json) file is highlighted with red color, all you need to do is copy it and paste it on appropriate button.
+
+#### Sidebar setup examples with _data.json_ file and screenshots of the page
+
+<ins>First example below:</ins>
+
+```
+[
+    {
+      "type": "subheader",
+      "title": "Subheader - Example 1"
+    },
+    {
+      "title": "Button 1",
+      "value": 0,
+      "report": {
+        "title": "Button 1",
+        "embedUrl": ""
+      }
+    },
+    {
+      "title": "Button 2",
+      "value": 1,
+      "report": {
+        "title": "Button 2",
+        "embedUrl": ""
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "subheader",
+      "title": "Subheader - Example 2"
+    },
+    {
+      "title": "Button 3",
+      "value": 2,
+      "report": {
+        "title": "Button 3",
+        "embedUrl": ""
+      }
+    }
+  ]
+```
+
+<ins>And how this looks like in app:</ins>
+
+![img](/readme-images/web%20app%20sidebar%20example1.jpg)
+
+<ins>Second example below:</ins>
+
+```
+[
+    {
+      "type": "subheader",
+      "title": "Subheader - Example 1"
+    },
+    {
+      "title": "Button 1",
+      "value": 0,
+      "report": {
+        "title": "Button 1",
+        "embedUrl": ""
+      }
+    },
+    {
+      "title": "Button 2",
+      "value": 1,
+      "report": {
+        "title": "Button 2",
+        "embedUrl": ""
+      }
+    },
+    {
+      "title":"Button 5",
+      "value":2,
+      "report": {
+        "title":"Button 5",
+        "embedUrl": ""
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "subheader",
+      "title": "Subheader - Example 2"
+    },
+    {
+      "title": "Button 3",
+      "value": 3,
+      "report": {
+        "title": "Button 3",
+        "embedUrl": ""
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type":"subheader",
+      "title": "Subheader - Example 3"
+    },
+    {
+      "title": "Button 4",
+      "value": 4,
+      "report": {
+        "title":"Button 4",
+        "embedUrl": ""
+      }
+    }
+  ]
+```
+
+<ins>And how this looks like in app:</ins>
+
+![img](/readme-images/web%20app%20sidebar%20example2.jpg)
