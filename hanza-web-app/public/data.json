@@ -8,7 +8,7 @@
       "value": 0,
       "report": {
         "title": "Plasma 5110",
-        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=85dae09c-efce-41e2-923c-288c79a81416&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=668572c0-36f3-45eb-86f0-73d07502fac7&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       }
     },
     {
@@ -16,7 +16,7 @@
       "value": 1,
       "report": {
         "title": "Laser 5210",
-        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=18f5fbba-cdfa-4b2c-8133-f95bd432deec&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=b504ccfe-6aba-489e-b6eb-c7141b4b0e7a&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       }
     },
     {
@@ -24,7 +24,7 @@
       "value": 2,
       "report": {
         "title": "Bending 5250",
-        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=7b09dc23-52c3-44f7-9435-df65fd069c51&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=dc8d7299-9d3d-4930-91d6-7928945e8ed6&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       }
     },
     {
@@ -32,7 +32,7 @@
       "value": 3,
       "report": {
         "title": "Machining 5300",
-        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=6b9d077e-0ac7-481c-99f6-6cd30e5f4a7e&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=7b62f5f8-d733-432a-967b-77698f4ce58a&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       }
     },
     {
@@ -47,7 +47,7 @@
       "value": 4,
       "report": {
         "title": "Welding 5150",
-        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=6607130e-52c0-403d-8cb7-b651bcd2a675&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=c747faf3-fda4-4fc0-8cec-4564390aa6d7&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       }
     },
 
@@ -63,15 +63,15 @@
       "value": 5,
       "report": {
         "title": "WET Paint 5410",
-        "embedUrl": ""
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=286d317e-fd01-495b-a85d-279d721cd00c&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       } 
     },
     { 
       "title": "Powder Paint 5431", 
       "value": 6,
       "report": {
-        "title": "WET Paint 5410",
-        "embedUrl": ""
+        "title": "Powder Paint 5431",
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=b1737af2-cecb-4b30-bd26-a8ce0409a343&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       } 
     },
     { 
@@ -79,7 +79,7 @@
       "value": 7,
       "report": {
         "title": "Assembly 5500",
-        "embedUrl": ""
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=a6fb19a6-c74a-411d-b7ee-ea6d98a80584&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       }  
     },
     { 
@@ -87,7 +87,7 @@
       "value": 8,
       "report": {
         "title": "New Blast 5415",
-        "embedUrl": ""
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=e424c999-c4b3-4c97-a44d-9d959118ff5b&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       }  
     },
     { 
@@ -95,7 +95,7 @@
       "value": 9,
       "report": {
         "title": "Old Blast 5413",
-        "embedUrl": ""
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=c3259f33-c378-4f9c-89d3-dd079cca5021&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       } 
     },
     { 
@@ -103,7 +103,7 @@
       "value": 10,
       "report": {
         "title": "Tank Wash 5417",
-        "embedUrl": " "
+        "embedUrl": "https://app.powerbi.com/reportEmbed?reportId=ab93babd-5014-4275-a6e4-546a84382e4a&autoAuth=true&ctid=3efd4d88-9b88-4fc9-b6c0-c7ca50f1db57"
       }  
     }
   ]
