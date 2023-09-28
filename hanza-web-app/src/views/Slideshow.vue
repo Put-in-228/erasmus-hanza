@@ -1,7 +1,10 @@
 
 <template>
     <div ref="fullscreenContainer">
-        <v-carousel v-model="selectedIndex" show-arrows="hover" light progress="primary" color="#3C1054" :continuous="true"
+        <div v-if="!reports.length" class="placeholder-image">
+            <img src="@/assets/computer.svg">
+        </div>
+        <v-carousel v-else="reports" v-model="selectedIndex" show-arrows="hover" light progress="primary" color="#3C1054" :continuous="true"
             cycle="true" :interval="intervalInMilliseconds" prev-icon="mdi-arrow-left" next-icon="mdi-arrow-right"
             style="height: 100vh;">
             <v-carousel-item v-for="(report, index) in reports" :key="index">
@@ -91,7 +94,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .fullscreen-iframe {
     width: 100%;
     height: 100vh;
@@ -102,4 +105,14 @@ export default {
 .mdi-arrow-right {
     color: #3C1054 !important;
 }
+
+.placeholder-image {
+    width: 500px;
+    opacity: 0.1;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding-top: 150px;
+}
+
 </style>

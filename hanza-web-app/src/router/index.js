@@ -5,6 +5,10 @@ import Slideshow from "../views/Slideshow.vue"
 
 const routes = [
   {
+    path: "/dashboard/",
+    component: Dashboard,
+  },
+  {
     path: "/dashboard/:dashboardId",
     name: "Dashboard",
     component: Dashboard,

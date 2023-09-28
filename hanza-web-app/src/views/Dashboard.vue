@@ -1,7 +1,10 @@
   
 <template>
     <div>
-      <div v-if="dashboardId && currentReport[dashboardId]">
+      <div v-if="!dashboardId" class="placeholder-image">
+        <img src="@/assets/metric.svg">
+      </div>
+      <div v-else="dashboardId && currentReport[dashboardId]">
         <iframe
             class="fullscreen-iframe"
             :title="currentReport[dashboardId].report.title"
@@ -48,6 +51,15 @@ h1 {
     width: 100%;
     height: 96vh;
     border: none;
+}
+
+.placeholder-image {
+    width: 600px;
+    opacity: 0.1;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding-top: 150px;
 }
 
 </style>

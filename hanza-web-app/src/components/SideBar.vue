@@ -79,7 +79,7 @@
             <v-divider></v-divider>
             <v-card>
 
-                <div class="d-flex pt-2 pl-5" style="gap: 5px;">
+                <div class="d-flex pt-4s pl-5" style="gap: 5px;">
                     <span class="mdi mdi-clock-time-eight-outline"></span>
                     <div class="text-centers">{{ sliderTimeValue }}</div>
                     <span class="mdi mdi-view-dashboard"></span>
@@ -98,10 +98,10 @@
                 </v-slider>
             </v-card>
 
-            <div class="pb-2">
-                <v-btn @click="toggleSlideshowFullscreen" block>Toggle fullscreen</v-btn>
-                <v-btn @click="startSlideshow" block>Start slideshow</v-btn>
-                <v-btn @click="resetSlideshow" block>Reset</v-btn>
+            <div class="slideshow-nav-buttons" style="gap: 5px;">
+                <v-btn icon="mdi mdi-fullscreen" @click="toggleSlideshowFullscreen"></v-btn>
+                <v-btn icon="mdi mdi-play-circle-outline" @click="startSlideshow" ></v-btn>
+                <v-btn icon="mdi mdi-reload" @click="resetSlideshow" ></v-btn>
             </div>
         </template>
 
@@ -116,7 +116,7 @@
 
     <v-app-bar theme="dark" density="compact" image="@/assets/headline.png">
         <v-spacer></v-spacer>
-        <v-img class="mx-6" src="@/assets/all_you_need_is_one_logo.svg" max-height="130" max-width="130" contain></v-img><v-divider vertical />
+        <v-divider vertical />
         <v-img class="mx-6" src="@/assets/logo-full-negative.svg" max-height="40" max-width="100" contain></v-img>
     </v-app-bar>
 </template>
@@ -139,7 +139,6 @@ export default {
 
         isSlideshowFullscreen: false,
     }),
-
     methods: {
         toggleDrawer(value) {
             if (this.selectedNavItem === value) {
@@ -175,15 +174,15 @@ export default {
             }
         },
         toggleSlideshowFullscreen() {
-            this.isSlideshowFullscreen =! this.isSlideshowFullscreen;
-            this.$emit('start-slideshow-fullscreen', { isSlideshowFullscreen: this.isSlideshowFullscreen} );
+            this.isSlideshowFullscreen = !this.isSlideshowFullscreen;
+            this.$emit('start-slideshow-fullscreen', { isSlideshowFullscreen: this.isSlideshowFullscreen });
         },
         startSlideshow() {
             this.$emit('start-slideshow', { selectedNavItems: this.selectedNavItems, sliderTimeValue: this.sliderTimeValue });
         },
         resetSlideshow() {
             this.$emit('start-slideshow', { selectedNavItems: [], sliderTimeValue: 0 });
-        }
+        },
     },
 }
 </script>
@@ -236,4 +235,13 @@ export default {
     background-color: #1E1E1E;
     /* Customize the background color */
 }
+
+.slideshow-nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    margin: 0px;
+}
+
 </style>
