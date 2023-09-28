@@ -1,6 +1,16 @@
 # ERASMUS HANZA PROJECT
 This repo was made by <ins>Jevgenij Čiursin</ins><sup>_LT_</sup>, <ins>Lukas Titlius</ins><sup>_LT_</sup>, <ins>Shah Eiman Amzar Bin Shah Apandi</ins><sup>_DE_</sup>, <ins>Aleksandrs Veļikanovs</ins><sup>_LV_</sup>, <ins>Aleksandr Afanassjev</ins><sup>_EE_</sup>.
 
+## Table of contents
+
+- **[Project task](#project-task)**
+- **[Power BI reports](#power-bi-reports)**
+    - **[Report for OEE% and Productivity indicators example](#report-for-oee-and-productivity-indicators-example)**
+    - **[Report for Late hours and Hours indicators example](#report-for-late-hours-and-hours-indicators-example)**
+    - **[Report for Rejection costs, Safety, Maintenence and undefined interruptions example](#report-for-rejection-costs-safety-maintenence-and-undefined-interruptions-example)**
+- **[Web application as data visualization solution](#web-application-as-data-visualization-solution)**
+
+
 ## Project task
 
 During **ERASMUS+ BIP** project our task was to create Power BI report templates to show _Hanza_ company's data on TV screens<sup>Power BI report files can be found in [Power BI reports](/Power%20BI%20reports) folder</sup>. 
@@ -28,7 +38,7 @@ This screenshot shows two indicators (OEE, Productivity), below each graph there
 
 Like in the previous screenshot, two indicators are selected (Late hours and Hours), which show the hours of lateness and the operating hours of the sensors.
 
-### Report for Rejection costs, Safety, Maintenence and undefined interruptions
+### Report for Rejection costs, Safety, Maintenence and undefined interruptions example
 ![img](/readme-images/rejection%20costs-safety-maintenence%20and%20undefined%20interruptions.jpg)
 
 In this table and graph, indicators such as Rejection costs, Safety/Quantity, Mainetance and Undefined interruption were selected. Also using the slicer, you can see how much expenses were by month and a KPI block was added to this char (goal = 100 per day).
