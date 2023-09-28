@@ -64,27 +64,29 @@ Below you can see the sidebar implementation in _web application_ and instructio
 
 ```
 [
-...
 {
-      "type": "subheader",
-      "title": "subheader - Example 1"
+      "type": "subheader", <-- Important to keep it as subheader
+      "title": "subheader - Example 1" <-- The name of subheader to be shown (can be any)
 },
 ...
-//Here you input information regarding buttons that are affiliated with **subheader - Example 1**\\
+//Here you input information regarding buttons that are affiliated with subheader - Example 1\\
 ...
 {
-      "type": "subheader",
-      "title": "subheader - Example 2"
+      "type": "divider" <-- Important to keep it as divider //Place it in between the previous subheader buttons and new subheader\\
+},
+{
+      "type": "subheader", <-- Important to keep it as subheader
+      "title": "subheader - Example 2" <-- The name of subheader to be shown (can be any)
 },
 ...
-//Here you input information regarding buttons that are affiliated with **subheader - Example 2**\\
+//Here you input information regarding buttons that are affiliated with subheader - Example 2\\
 ...
 ]
 ```
 
 Description TBA
 
-#### Buttons under Headers/Categories
+#### Buttons under Headers/Categories setup
 
 ```
 [
@@ -92,7 +94,7 @@ Description TBA
 //Here you input subheader as shown above\\ 1st subheader
 ...
 {
-      "title": "1st subheader Button 1",
+      "title": "1st subheader Button 1", <-- Name of the button shown on the screen (can be any)
       "value": 0,
       "report": {
         "title": "Report title (any)",
@@ -108,7 +110,7 @@ Description TBA
       }
 },
 ...
-//Here you input subheader as shown above\\ 2nd subheader
+//Here you input subheader and divider as shown above\\ 2nd subheader
 ...
 {
       "title": "2nd subheader Button 1",
@@ -134,7 +136,6 @@ Description TBA
         "embedUrl": "Refer to guide below on how to get embedUrl"
       }
 },
-...
 ]
 ```
 
@@ -142,4 +143,14 @@ Description TBA
 
 #### How to get embedUrl of _Power BI_ report for sidebar setup
 
-TBA
+To get ***embedUrl*** of _Power BI_ report that you want to show in _web application_ refer to the image below:
+
+![img](/readme-images/web%20app%20report%20add.jpg)
+
+After clicking `Website or portal` button you should get pop-up window as shown below:
+
+![img](/readme-images/web%20app%20report%20add2.jpg)
+
+The ***embedUrl*** that you need to use in [sidebar setup](/hanza-web-app/public/data.json) file is highlighted with red color, all you need to do is copy it and paste it on appropriate button.
+
+#### Sidebar setup examples with _data.json_ file and screenshots of the page
