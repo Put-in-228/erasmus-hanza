@@ -15,7 +15,8 @@ This repo was made by <ins>Jevgenij Čiursin</ins><sup>_LT_</sup>, <ins>Lukas Ti
         - **[Buttons under Headers/Categories setup](#buttons-under-headerscategories-setup)**
         - **[How to get embedUrl of _Power BI_ report for sidebar setup](#how-to-get-embedurl-of-power-bi-report-for-sidebar-setup)**
         - **[Sidebar setup examples with _data.json_ file and screenshots of the page](#sidebar-setup-examples-with-datajson-file-and-screenshots-of-the-page)**
-    - **[Guide on how to setup project for _production_](#guide-on-how-to-setup-project-for-production)**
+    - **[Guide on how to setup project for _development_](#guide-on-how-to-setup-project-for-development)**
+        - **[How to get HTTPS git repo URL](#how-to-get-https-git-repo-url)**
     - **[Guide on how to navigate through web application and use it](#guide-on-how-to-navigate-through-web-application-and-use-it)**
         - **[Front page guide](#front-page-guide)**
         - **[Slideshow mode guide](#slideshow-mode-guide)**
@@ -26,7 +27,7 @@ This repo was made by <ins>Jevgenij Čiursin</ins><sup>_LT_</sup>, <ins>Lukas Ti
 
 ## Project task
 
-During **ERASMUS+ BIP** project our task was to create Power BI report templates to show _Hanza_ company's data on TV screens<sup>Power BI report files can be found in [Power BI reports](/Power%20BI%20reports) folder</sup>. 
+During **ERASMUS+ BIP** project our task was to create Power BI report templates to show ***Hanza*** company's data on TV screens<sup>Power BI report files can be found in [Power BI reports](/Power%20BI%20reports) folder</sup>. 
 
 Secondary objective was to create a web application which visualizes the data as well as has Graphical User Interface elements to navigate through different reports<sup>web application can be found in [hanza-web-app](/hanza-web-app) folder</sup>.
 
@@ -295,9 +296,30 @@ The ***embedUrl*** that you need to use in [sidebar setup](/hanza-web-app/public
 
 ![img](/readme-images/web%20app%20sidebar%20example2.jpg)
 
-### Guide on how to setup project for _production_
+### Guide on how to setup project for _development_
 
-TBA
+In this section you will be provided with instructions on how to download needed dependencies and libraries to continue developing this project.
+
+Below is table with commands that you might frequently use during development:
+
+| Command | What it does |
+| --- | --- |
+| cd "link to folder" | Use this to navigate yourself through folders on terminal (e. g. cd C:/Windows/win32) |
+| npm install | Use this in vue.js project folder to install all the dependencies and libraries that are used |
+| npm run dev | Use this in vue.js project folder to run demo of application for testing as end-user |
+
+Before cloning repository you need to download [Node.js](https://nodejs.org/en) to be able to use `npm` commands 
+
+After cloning repository with "git clone [https url](#how-to-get-https-git-repo-url)" that you execute in _Windows terminal_ you need to forward yourself to ***Vue.js*** project folder, which is -> [Vue.js project link in repo](/hanza-web-app), with `cd` command as shown above in the table and use `npm install` command to download dependencies to be able to run the project. When in need of testing _web application_ you need to use `npm run dev`, it will launch development server and provide a link in the _Windows terminal_ to access website. 
+
+#### How to get HTTPS git repo URL
+
+In this section you will be provided instructions on how to get `HTTPS` link to clone repository on your local device.
+
+![img](/readme-images/gitrepo.jpg)
+
+![img](https://placehold.co/15x15/red/red) - click with _LMB_ on `Code`, then choose `Local` tab and choose `HTTPS` clone method.<br>
+![img](https://placehold.co/15x15/green/green) - copy the link which can be used to clone repository into your local machine.
 
 ### Guide on how to navigate through _web application_ and use it
 
