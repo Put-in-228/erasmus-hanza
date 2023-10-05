@@ -3,7 +3,6 @@
     <v-navigation-drawer theme="dark" rail permanent>
         <v-list-item nav prepend-avatar="@/assets/logo.svg" width="100px"></v-list-item>
         <v-divider></v-divider>
-
         <v-list density="compact" nav>
             <v-list-item :to="'/dashboard/'" @click="toggleDrawer('dashboards')" prepend-icon="mdi-view-dashboard"
                 value="dashboards"></v-list-item>
